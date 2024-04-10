@@ -1,0 +1,59 @@
+/* Reset general */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+form,
+input,
+textarea,
+button,
+header,
+footer,
+nav,
+section,
+article,
+aside,
+main,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box; /* Mejora el manejo del box model */
+}
+
+/* Estilos adicionales que se pueden agregar según las necesidades */
+body {
+    line-height: 1;
+    font-family: Arial, sans-serif; /* Se puede cambiar según las preferencias */
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

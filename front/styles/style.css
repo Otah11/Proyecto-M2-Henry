@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #949494;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilos de la rejilla de películas */
+  #films {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Mostrar 3 películas por fila */
+    gap: 20px; /* Espacio entre las películas */
+  }
+  
+  /* Estilos de las tarjetas de películas */
+  .movie {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movie img {
+    max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .movie .divMovie {
+    margin-top: 10px;
+  }
+  
+  .movie h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+  }
+  
+  .movie p {
+    margin: 5px 0;
+  }
+  
+  /* Estilos de los enlaces */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
