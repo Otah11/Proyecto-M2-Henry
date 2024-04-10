@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
       posterImage.src = movie.poster;
       posterImage.alt = movie.title;
   
-      const movieInfo = document.createElement('div');
-      movieInfo.classList.add('divMovie');
-      movieInfo.innerHTML = `
+      const containderCard = document.createElement('div');
+      containderCard.classList.add('divMovie');
+      containderCard.innerHTML = `
         <h3>${movie.title} - (${movie.year})</h3>
         <p><strong>Director:</strong> ${movie.director}</p>
         <p><strong>Duración:</strong> ${movie.duration}</p>
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
   
       movieElement.appendChild(posterImage);
-      movieElement.appendChild(movieInfo);
+      movieElement.appendChild(containderCard);
       filmsSection.appendChild(movieElement);
     });
   });
