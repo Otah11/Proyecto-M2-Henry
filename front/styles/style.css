@@ -1,65 +1,82 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #949494;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  /* Estilos de la rejilla de películas */
-  #films {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Mostrar 3 películas por fila */
-    gap: 20px; /* Espacio entre las películas */
-  }
-  
-  /* Estilos de las tarjetas de películas */
-  .movie {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .movie img {
-    max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .movie .divMovie {
-    margin-top: 10px;
-  }
-  
-  .movie h3 {
-    margin: 5px 0;
-    font-size: 1.2em;
-  }
-  
-  .movie p {
-    margin: 5px 0;
-  }
-  
-  /* Estilos de los enlaces */
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #949494;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos de la rejilla de películas */
+#films {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Mostrar 4 películas por fila */
+  gap: 20px; /* Espacio entre las películas */
+}
+
+/* Estilos de las tarjetas de películas */
+.movie {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.movie img {
+  max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie .divMovie {
+  margin-top: 10px;
+}
+
+.movie h3 {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+.movie p {
+  margin: 5px 0;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  background-color: #333; /* Color de fondo de la barra de navegación */
+  overflow: hidden; /* Evita que los elementos floten fuera de la barra */
+  text-align: center; /* Centra los elementos de la barra de navegación */
+}
+
+.navbar ul {
+  list-style-type: none; /* Quita los puntos de la lista */
+  margin: 0 auto; /* Centra la lista horizontalmente */
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+}
+
+.navbar li a {
+  display: block; /* Convierte los elementos de la lista en bloques para que ocupen todo el ancho */
+  padding: 10px 20px; /* Espacio alrededor del texto del enlace */
+  color: white; /* Color del texto del enlace */
+  text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
+}
+
+.navbar li a:hover {
+  background-color: #555; /* Color de fondo cuando el mouse pasa sobre el enlace */
+}
