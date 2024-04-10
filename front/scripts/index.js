@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const filmsSection = document.getElementById('films');
+    const containerCard = document.getElementById('films');
   
     tempData.forEach(movie => {
       const movieElement = document.createElement('article');
@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
       posterImage.src = movie.poster;
       posterImage.alt = movie.title;
   
-      const containderCard = document.createElement('div');
-      containderCard.classList.add('divMovie');
-      containderCard.innerHTML = `
+      const movieInfo = document.createElement('div');
+      movieInfo.classList.add('divMovie');
+      movieInfo.innerHTML = `
         <h3>${movie.title} - (${movie.year})</h3>
         <p><strong>Director:</strong> ${movie.director}</p>
         <p><strong>Duración:</strong> ${movie.duration}</p>
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
   
       movieElement.appendChild(posterImage);
-      movieElement.appendChild(containderCard);
-      filmsSection.appendChild(movieElement);
+      movieElement.appendChild(movieInfo);
+      containerCard.appendChild(movieElement);
     });
   });
   
