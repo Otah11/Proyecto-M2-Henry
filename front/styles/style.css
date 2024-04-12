@@ -104,3 +104,18 @@ h2 {
 .navbar li a:hover {
     background-color: #555; 
 }
+.imgCr{
+    height: 380px;
+    margin: 1em;
+    
+}
+.carousel-item img {
+    display: block;
+    margin: auto;
+  }
+
+  .carousel-container {
+    max-width: 800px; /* Define el ancho máximo deseado */
+    margin: 0 auto; /* Para centrar el contenedor horizontalmente */
+}
+
