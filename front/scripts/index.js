@@ -1,7 +1,7 @@
 const moviesContainer = document.getElementById("movies-container");
 
 // se realiza la solicitud GET al servidor externo
-$.get("https://students-api.up.railway.app/movies", function(data) {
+$.get("https://webpt19b.web.app/data/movies.json", function(data) {
     // se itera sobre los datos recibidos
     data.forEach((movie) => {
         const card = document.createElement("div");
