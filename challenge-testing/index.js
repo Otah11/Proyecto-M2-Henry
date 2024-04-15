@@ -1,3 +1,4 @@
+// index.js
 class CarritoCompra {
     constructor() {
       this.carrito = [];
@@ -20,7 +21,6 @@ class CarritoCompra {
       });
       return totalConDescuento;
     }
-  }
+}
   
-  module.exports = CarritoCompra;
-  
+module.exports = CarritoCompra;
