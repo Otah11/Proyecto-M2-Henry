@@ -1,4 +1,3 @@
-// CarritoCompra.test.js
 const CarritoCompra = require("../index");
 
 describe("CarritoCompra", () => {
@@ -38,20 +37,20 @@ describe("CarritoCompra", () => {
       carrito.agregarProducto({ nombre: "Producto1", precio: 10 });
       carrito.agregarProducto({ nombre: "Producto2", precio: 20 });
       carrito.aplicarDescuento(10); // 10% de descuento
-      expect(carrito.calcularTotal()).toBe(27); // Total: 30 - 10% = 27
+      expect(carrito.calcularTotal()).toBe(27); // total: 30 - 10% = 27
     });
 
     it("no debe aplicar el descuento si el porcentaje es 0", () => {
       const carrito = new CarritoCompra();
       carrito.agregarProducto({ nombre: "Producto1", precio: 10 });
-      carrito.aplicarDescuento(0); // Sin descuento
-      expect(carrito.calcularTotal()).toBe(10); // Total sin descuento: 10
+      carrito.aplicarDescuento(0); // sin descuento
+      expect(carrito.calcularTotal()).toBe(10); // total sin descuento: 10
     });
 
     it("no debe aplicar el descuento si el carrito está vacío", () => {
       const carrito = new CarritoCompra();
-      carrito.aplicarDescuento(10); // No hay productos en el carrito
-      expect(carrito.calcularTotal()).toBe(0); // Total: 0
+      carrito.aplicarDescuento(10); // no hay productos en el carrito
+      expect(carrito.calcularTotal()).toBe(0); // total: 0
     });
   });
 });
