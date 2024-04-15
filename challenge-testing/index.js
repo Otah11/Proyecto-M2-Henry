@@ -1,4 +1,3 @@
-// index.js
 class CarritoCompra {
     constructor() {
       this.carrito = [];
