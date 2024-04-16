@@ -1,8 +1,8 @@
 const moviesContainer = document.getElementById("movies-container");
 
-// Realizamos la solicitud GET al servidor externo utilizando Axios
-axios.get("https://webpt19b.web.app/data/movies.json")
-  .then(response => {
+async function obtenerPeliculas() {
+  try {
+    const response = await axios.get("https://webpt19b.web.app/data/movies.json");
     // Una vez que obtenemos la respuesta, iteramos sobre los datos recibidos
     response.data.forEach(movie => {
       const card = document.createElement("div");
@@ -46,8 +46,10 @@ axios.get("https://webpt19b.web.app/data/movies.json")
 
       moviesContainer.appendChild(card);
     });
-  })
-  .catch(error => {
+  } catch (error) {
     console.error("Error al obtener los datos de las películas:", error);
     alert("Error al obtener los datos de las películas.");
-  });
+  }
+}
+
+obtenerPeliculas();
