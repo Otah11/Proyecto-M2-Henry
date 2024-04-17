@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto M2 Sitios</title>
     <link rel="stylesheet" href="../styles/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
-    <h1>Página de Películas</h1>
-    
+    <header class="d-flex justify-content-center align-items-center">
+        <img src="../assets/cine.png" alt="Logo de la tienda" class="me-3" style="width: 150px;">
+        <h1 class="m-0">Tienda de Películas</h1>
+    </header>
+        
     <nav class="navbar">
         <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -22,37 +28,41 @@
 
     <h2>Sitios Recomendados</h2>
 
-    <article>
-        <div>
-            <span><a href="https://www.imdb.com/"><img src="/assets/imdb.png" alt=""></a></span>
-            <span>IMDB</span>
-        
-            <a href="https://www.imdb.com/chart/top/"><img src="/assets/imdb.png" alt=""></a>
-            <span>IMDB TOP 250</span>
-        
-            <a href="https://www.rottentomatoes.com/"><img src="/assets/rt.png" alt=""></a>
-            <span>ROTTEN TOMATOES</span>
+    <article class="container-sm">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+            <a href="https://www.imdb.com/" class="col">
+                <figure class="figure text-center">
+                    <img src="/assets/imdb.png" class="figure-img img-fluid rounded-circle mb-3" alt="IMDB">
+                    <figcaption class="figure-caption text-end">IMDB.</figcaption>
+                </figure>
+            </a>
             
-            <a href="https://www.netflix.com/ar-en/"><img src="/assets/netflix.png" alt=""></a>
-            <span>NETFLIX</span>
-        
-            <a href="https://www.primevideo.com/"><img src="/assets/primevideo.png" alt=""></a>
-            <span>PRIME VIDEO</span>
-        
-
+            <a href="https://www.imdb.com/chart/top/" class="col">
+                <figure class="figure text-center">
+                    <img src="/assets/imdb.png" class="figure-img img-fluid rounded-circle mb-3" alt="IMDB TOP 250">
+                    <figcaption class="figure-caption text-end">IMDB TOP 250.</figcaption>
+                </figure>
+            </a>
+            
+            <a href="https://www.rottentomatoes.com/" class="col">
+                <figure class="figure text-center">
+                    <img src="/assets/rt.png" class="figure-img img-fluid rounded-circle mb-3" alt="Rotten Tomatoes">
+                    <figcaption class="figure-caption text-end">ROTTEN TOMATOES.</figcaption>
+                </figure>
+            </a>
+            
+            <a href="https://www.netflix.com/" class="col">
+                <figure class="figure text-center">
+                    <img src="/assets/netflix.png" class="figure-img img-fluid rounded-circle mb-3" alt="Netflix">
+                    <figcaption class="figure-caption text-end">NETFLIX.</figcaption>
+                </figure>
+            </a>
         </div>
+    </article>
 
     
-    </article>
     <footer>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/about_me.html">About Me</a></li>
-            <li><a href="../pages/about_proyect.html">About Project</a></li>
-            <li><a href="../pages/contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+
     </footer>
 
 </body>

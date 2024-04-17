@@ -119,3 +119,7 @@ h2 {
     margin: 0 auto; /* Para centrar el contenedor horizontalmente */
 }
 
+.figure img {
+    width: 200px; /* ajusta el ancho de las imágenes */
+    height: auto; /* mantiene la proporción de aspecto original */
+}
