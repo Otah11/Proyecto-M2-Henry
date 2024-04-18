@@ -1,5 +1,8 @@
+const { getMoviesService } = require('../services/moviesService')
+
 const moviesController = (req,res)=>{
-    res.status(200).send("Proximamente estaran disponibles los datos de las peliculas")
+    const movies = getMoviesService()
+    res.status(200).json(movies)
 }
 
 module.exports = moviesController
