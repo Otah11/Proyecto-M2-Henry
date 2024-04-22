@@ -12,24 +12,71 @@
 <body>
 
     <header class="d-flex justify-content-center align-items-center">
-        <img src="../assets/cine.png" alt="Logo de la tienda" class="me-3" style="width: 150px;">
-        <h1 class="m-0">Tienda de Películas</h1>
-    </header>
+        <img src="../assets/cine.png" alt="" class="logo" style="max-width: 150px; height: auto;">
         
-    <nav class="navbar">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/about_me.html">About me</a></li>
-            <li><a href="../pages/about_proyect.html">About Project</a></li>
-            <li><a href="../pages/sitios.html">Sitios Recomendados</a></li>
-        </ul>
-    </nav>
+        <img src="../assets/tienda de peliclas.png" alt="" class="logo" style="max-height: 150px; width: auto;">
+    </header>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link" href="../pages/about_me.html">About Me</a>
+              <a class="nav-link" href="../pages/about_proyect.html">About Proyect</a>
+              <a class="nav-link" href="../pages/sitios.html">Sitios Recomendados</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+        
     <main>
 
-    <h2>linkedin , mail, etc</h2>
-        <p>si es pequeño, sacar el footer</p>
+    <h2>Déjanos tu comentario</h2>
 
+    <div class="container d-flex justify-content-center align-items-center mt-5 mb-5">
+        <form class="w-75">
+            <div class="mb-3">
+                <input type="text" class="form-control" name="Nombre y Apellido" placeholder="Nombre y Apellido" required>
+            </div>
+            
+            <div class="mb-3"> 
+                <input type="email" class="form-control" name="e-mail" placeholder="e-mail" required>
+            </div>
+    
+            <div class="mb-3">
+                <textarea class="form-control comment-box" id="commentTextArea" name="Comentario" rows="5" placeholder="Dejar comentario" maxlength="500" required></textarea>
+                <div class="remaining-characters"> <span id="charCount">500</span></div>
+            </div>
+              
+            <button type="submit" class="btn  bg-dark border-bottom border-body" data-bs-theme="dark">Enviar</button>
+        </form>
+    </div>
+    
+    
+    <script>
+        const textarea = document.getElementById('commentTextArea');
+        const charCountSpan = document.getElementById('charCount');
+    
+        textarea.addEventListener('input', function() {
+            const remainingChars = 500 - textarea.value.length;
+            charCountSpan.textContent = remainingChars;
+        });
+    </script>
+
+    
     </main>
+    <footer>
 
+        <div class="ms-3">
+            <small><p>&copy; 2024 Juan Alberto Araujo. Todos los derechos reservados.</p>
+                <p>Calle Siempre Viva 742.</p>
+            </small>
+            </div>
+    </footer>
 </body>
 </html>

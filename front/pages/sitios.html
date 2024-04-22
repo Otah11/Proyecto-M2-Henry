@@ -9,60 +9,143 @@
     <link rel="stylesheet" href="../styles/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+
 </head>
 <body>
 
     <header class="d-flex justify-content-center align-items-center">
-        <img src="../assets/cine.png" alt="Logo de la tienda" class="me-3" style="width: 150px;">
-        <h1 class="m-0">Tienda de Películas</h1>
-    </header>
+        <img src="../assets/cine.png" alt="" class="logo" style="max-width: 150px; height: auto;">
         
-    <nav class="navbar">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/about_me.html">About Me</a></li>
-            <li><a href="../pages/about_proyect.html">About Project</a></li>
-            <li><a href="../pages/contact.html">Contacto</a></li>
-        </ul>
-    </nav>
+        <img src="../assets/tienda de peliclas.png" alt="" class="logo" style="max-height: 150px; width: auto;">
+    </header>
+    
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link" href="../pages/about_me.html">About Me</a>
+              <a class="nav-link" href="../pages/about_proyect.html">About Proyect</a>
+              <a class="nav-link" href="../pages/contact.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
+
+
+    
     <h2>Sitios Recomendados</h2>
 
     <article class="container-sm">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-            <a href="https://www.imdb.com/" class="col">
-                <figure class="figure text-center">
-                    <img src="/assets/imdb.png" class="figure-img img-fluid rounded-circle mb-3" alt="IMDB">
-                    <figcaption class="figure-caption text-end">IMDB.</figcaption>
-                </figure>
+            
+            <a href="https://www.imdb.com/" target="_blank"style="text-decoration: none;">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="/assets/imdb.png" class="card-img-top rounded-circle" alt="IMDB">
+                <div class="card-body">
+                    <p class="card-text">IMDB</p>
+                </div>
+                </div>
             </a>
             
-            <a href="https://www.imdb.com/chart/top/" class="col">
-                <figure class="figure text-center">
-                    <img src="/assets/imdb.png" class="figure-img img-fluid rounded-circle mb-3" alt="IMDB TOP 250">
-                    <figcaption class="figure-caption text-end">IMDB TOP 250.</figcaption>
-                </figure>
+            <a href="https://www.imdb.com/chart/top/" target="_blank"style="text-decoration: none;">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="/assets/imdb.png" class="card-img-top rounded-circle" alt="IMDB TOP 250">
+                    <div class="card-body">
+                      <p class="card-text">IMDB TOP 250</p>
+                    </div>
+                  </div>
+            </a>
+
+            <a href="https://www.rottentomatoes.com/" target="_blank"style="text-decoration: none;">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="/assets/rt.png" class="card-img-top rounded-circle" alt="Rotten Tomatoes">
+                        <div class="card-body">
+                          <p class="card-text">ROTTEN TOMATOES</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.filmaffinity.com/" target="_blank"style="text-decoration: none;">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="/assets/filmaf.png" class="card-img-top rounded-circle" alt="FILM AFFINITY">
+                        <div class="card-body">
+                            <p class="card-text">FILM AFFINITY</p>
+                        </div>
+                </div>
             </a>
             
-            <a href="https://www.rottentomatoes.com/" class="col">
-                <figure class="figure text-center">
-                    <img src="/assets/rt.png" class="figure-img img-fluid rounded-circle mb-3" alt="Rotten Tomatoes">
-                    <figcaption class="figure-caption text-end">ROTTEN TOMATOES.</figcaption>
-                </figure>
+            <a href="https://www.netflix.com/" target="_blank"style="text-decoration: none;">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="/assets/netflix.png" class="card-img-top rounded-circle" alt="NETFLIX">
+                <div class="card-body">
+                  <p class="card-text">NETFLIX</p>
+                </div>
+                </div>
             </a>
-            
-            <a href="https://www.netflix.com/" class="col">
-                <figure class="figure text-center">
-                    <img src="/assets/netflix.png" class="figure-img img-fluid rounded-circle mb-3" alt="Netflix">
-                    <figcaption class="figure-caption text-end">NETFLIX.</figcaption>
-                </figure>
+
+            <a href="https://www.primevideo.com/" target="_blank"style="text-decoration: none;">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="/assets/prime_video.png" class="card-img-top rounded-circle" alt="PRIME VIDEO">
+                <div class="card-body">
+                    <p class="card-text">PRIME VIDEO</p>
+                    </div>
+                </div>
             </a>
+                    
+            <a href="https://www.max.com/" target="_blank"style="text-decoration: none;">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="/assets/max.jpg" class="card-img-top rounded-circle" alt="MAX">
+                    <div class="card-body">
+                        <p class="card-text">MAX</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.disneyplus.com/" target="_blank"style="text-decoration: none;">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="/assets/disney+.jpg" class="card-img-top rounded-circle" alt="DISNEY">
+                    <div class="card-body">
+                    <p class="card-text">DISNEY +</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.starplus.com/" target="_blank"style="text-decoration: none;">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="/assets/star+.jpg" class="card-img-top rounded-circle" alt="STAR">
+                    <div class="card-body">
+                      <p class="card-text">STAR +</p>
+                    </div>
+                </div>
+            </a>
+                                
+
         </div>
     </article>
 
-    
-    <footer>
 
+    <footer>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid justify-content-center">
+               <div class="navbar-nav">
+                 
+                <button class="btn btn-outline-light" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Top</button>
+                </div>
+              
+            </div>
+          </nav>
+        <div class="ms-3">
+            <small><p>&copy; 2024 Juan Alberto Araujo. Todos los derechos reservados.</p>
+                <p>Calle Siempre Viva 742.</p>
+            </small>
+            </div>
     </footer>
 
 </body>
