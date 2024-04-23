@@ -7,8 +7,8 @@ dbCon().then(
     (res)=>{
         app.listen(PORT, ()=>console.log(`server is listening on port ${PORT}`))
     })
-    .catch((err) => {
-        console.log("Error al conectar la BDD");
+    .catch((error) => {
+        console.log("Error al conectar la BDD", error);
     });
     
 

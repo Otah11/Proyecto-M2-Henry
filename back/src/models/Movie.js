@@ -1,13 +1,36 @@
 const mongoose = require("mongoose");
 
 const movieSchema = new mongoose.Schema({
-    title: String,
-    year: Number,
-    director: String,
-    duration: String,
-    genre: [String], // Ahora se define como un array de cadenas
-    rate: Number,
-    poster: String
+    title: {
+        type: String,
+        unique: true,
+        required: true
+    },
+    year: {
+        type: Number,
+        required: true
+    },   
+    director: {
+        type: String,
+        required: true,
+    },
+    duration: {
+        type: String,
+        required: true,
+    },
+    genre: {
+        type: [String],
+        required: true,
+    }, 
+    rate: {
+        type: Number,
+        required: true,
+    },
+    poster: {
+        type: String,
+        unique: true,
+        required: true,
+    },
 });
 
 const Movie = mongoose.model("Movie", movieSchema);
