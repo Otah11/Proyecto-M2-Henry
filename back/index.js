@@ -1,7 +1,8 @@
+require("dotenv").config();
 const app = require("./src/server")
 const dbCon = require("./src/config/dbCon")//agregado demo
 
-const PORT = 3000
+const { PORT } = process.env
 
 dbCon().then(
     (res)=>{
