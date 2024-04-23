@@ -77,33 +77,6 @@ h2 {
     opacity: 0.7; /* Opacidad al pasar el puntero */
 }
 
-
-.navbar {
-    background-color: #333; 
-    overflow: hidden; 
-    text-align: center; 
-}
-
-.navbar ul {
-    list-style-type: none; 
-    margin: 0 auto; 
-    padding: 0;
-}
-
-.navbar li {
-    display: inline-block; 
-}
-
-.navbar li a {
-    display: block; 
-    padding: 1em 2em; 
-    color: white; 
-    text-decoration: none; 
-}
-
-.navbar li a:hover {
-    background-color: #555; 
-}
 .imgCr{
     height: 380px;
     margin: 1em;
