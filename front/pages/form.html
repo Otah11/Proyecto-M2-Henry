@@ -14,7 +14,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+  
 </head>
 
 <body>
@@ -53,10 +53,10 @@
         Completa el formulario para agregar una nueva película.
       </p>
     </header>
-    <form id="movie-form">
+    <form id="movie-form" name="form">
       <div class="form-group">
         <label id="title-label" for="title">Título</label>
-        <input type="string" name="title" id="title" class="form-control" placeholder="Ingrese el título de la película"
+        <input type="text" name="title" id="title" class="form-control" placeholder="Ingrese el título de la película"
           required />
       </div>
       <div class="form-group">
@@ -66,30 +66,31 @@
       </div>
       <div class="form-group">
         <label id="director-label" for="director">Director</label>
-        <input type="string" name="director" id="director" class="form-control"
+        <input type="text" name="director" id="director" class="form-control"
           placeholder="Ingrese el director de la película" required />
       </div>
       <div class="form-group">
         <label id="duration-label" for="duration">Duración (1h 35min)</label>
-        <input type="string" name="duration" id="duration" min="1" class="form-control"
-          placeholder="Ingrese la duración de la película en minutos" required />
+        <input type="text" name="duration" id="duration" min="1" class="form-control"
+          placeholder="Ingrese la duración de la película en h y min" required />
       </div>
-      <div class="form-group">
+      <div class="form-group" id="options">
         <label id="genre-label">Género</label><br>
       </div>
+
       <div class="form-group">
         <label id="rate-label" for="rate">Calificación</label>
-        <input type="decimal" name="rate" id="rate" min="1" max="10" class="form-control"
+        <input type="number" name="rate" id="rate" step="0.1" min="1" max="10" class="form-control"
           placeholder="Ingrese la calificación de la película" required inputmode="numeric" />
       </div>
       <div class="form-group">
         <label id="poster-label" for="poster">Póster (URL)</label>
-        <input type="string" name="poster" id="poster" class="form-control"
+        <input type="text" name="poster" id="poster" class="form-control"
           placeholder="Ingrese la URL del póster de la película" required />
       </div>
       <div class="form-group">
-        <button type="button" id="clear" class="clear-button" onclick="clearForm()">Limpiar</button>
-        <button type="submit" id="submit" class="submit-button">Enviar</button>
+        <button type="button" id="btnCleaner" class="clear-button">Limpiar</button>
+        <button type="submit" id="btnSubmit" class="submit-button">Enviar</button>
       </div>
     </form>
   </div>
@@ -113,7 +114,8 @@
     </div>
   </footer>
 
-
+ 
+  <script src="../scripts/createMovies.js"></script>
 </body>
 
 </html>

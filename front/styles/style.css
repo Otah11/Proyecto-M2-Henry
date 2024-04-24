@@ -254,6 +254,7 @@ form {
 .form-group {
   margin : 0 auto 1.25rem auto;
   padding: 0.25rem;
+  
 }
 
 .form-control {
@@ -328,4 +329,9 @@ form {
 }
 .comment-box {
     height: 200px; /* Ajusta aquí la altura deseada */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
 }
