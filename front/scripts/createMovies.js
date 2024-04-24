@@ -70,6 +70,7 @@ function validateCheckboxes() {
 function handlerSubmit(event) {
     event.preventDefault();
     const genres = validateCheckboxes();
+    console.log(title.value, year.value, director.value, duration.value, rate.value, poster.value)
     if (![title.value, year.value, director.value, duration.value, rate.value, poster.value, genres].every(Boolean)) return alert('Faltan llenar campos');
 
     const movie = {

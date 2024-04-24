@@ -19,7 +19,7 @@ const movieSchema = new mongoose.Schema({
         required: true,
     },
     genre: {
-        type: [String],
+        type: Array,
         required: true,
     }, 
     rate: {

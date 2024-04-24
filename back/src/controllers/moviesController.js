@@ -1,8 +1,9 @@
-const { getMoviesService, postMoviesService } = require('../services/moviesService');
+//const { getMoviesService, postMoviesService } = require('../services/moviesService');
+const moviesService = require ('../services/moviesService')
 
 const getMoviesController = async (req, res) => {
     try {
-        const movies = await getMoviesService();
+        const movies = await moviesService.getMoviesService();
         res.status(200).json(movies);
     } catch (error) {
         console.error("Error en el controlador de películas:", error.message);
@@ -11,8 +12,9 @@ const getMoviesController = async (req, res) => {
 };
 const postMoviesController = async (req, res) => {
     try {
-        const respuestaMoviesController = await postMoviesService ();
-        res.status(201).send(respuestaMoviesController)
+        const { title, duration, year, director, genre, rate, poster } = req.body;
+        const respuestaMoviesController = await moviesService.postMoviesService ({ title, duration, year, director, genre, rate, poster });
+        res.status(201).json(respuestaMoviesController)
     } catch (error) {
         res.status(500).json({ error: "Error en crear la pelicula" });
         
@@ -20,4 +22,4 @@ const postMoviesController = async (req, res) => {
 }
 
 
-module.exports = getMoviesController, postMoviesController;
+module.exports = {getMoviesController, postMoviesController};
