@@ -76,24 +76,6 @@
       </div>
       <div class="form-group">
         <label id="genre-label">Género</label><br>
-        <label><input name="genre" value="Acción" type="checkbox" class="input-checkbox" />Acción</label>
-        <label><input name="genre" value="Aventura" type="checkbox" class="input-checkbox" />Aventura</label>
-        <label><input name="genre" value="Bélica" type="checkbox" class="input-checkbox" />Bélica</label>
-        <label><input name="genre" value="Catástrofe" type="checkbox" class="input-checkbox" />Catástrofe</label>
-        <label><input name="genre" value="Ciencia Ficción" type="checkbox" class="input-checkbox" />Ciencia
-          Ficción</label>
-        <label><input name="genre" value="Comedia" type="checkbox" class="input-checkbox" />Comedia</label>
-        <label><input name="genre" value="Crimen" type="checkbox" class="input-checkbox" />Crimen</label>
-        <label><input name="genre" value="Documental" type="checkbox" class="input-checkbox" />Documental</label>
-        <label><input name="genre" value="Drama" type="checkbox" class="input-checkbox" />Drama</label>
-        <label><input name="genre" value="Fantasía" type="checkbox" class="input-checkbox" />Fantasía</label>
-        <label><input name="genre" value="Historia" type="checkbox" class="input-checkbox" />Historia</label>
-        <label><input name="genre" value="Infantiles" type="checkbox" class="input-checkbox" />Infantiles</label>
-        <label><input name="genre" value="Misterio" type="checkbox" class="input-checkbox" />Misterio</label>
-        <label><input name="genre" value="Musicales" type="checkbox" class="input-checkbox" />Musicales</label>
-        <label><input name="genre" value="Romance" type="checkbox" class="input-checkbox" />Romance</label>
-        <label><input name="genre" value="Suspenso" type="checkbox" class="input-checkbox" />Suspenso</label>
-        <label><input name="genre" value="Terror" type="checkbox" class="input-checkbox" />Terror</label>
       </div>
       <div class="form-group">
         <label id="rate-label" for="rate">Calificación</label>
@@ -130,28 +112,6 @@
       </small>
     </div>
   </footer>
-  <script>
-    // Función para limpiar el formulario
-    function clearForm() {
-      // Seleccionar el formulario
-      var form = document.getElementById("movie-form");
-      // Restablecer el formulario
-      form.reset();
-    }
-    // Espera a que el DOM esté completamente cargado
-    $(document).ready(function () {
-      // Función para validar el formulario antes de enviarlo
-      $("#movie-form").submit(function (event) {
-        // Verificar si al menos una casilla de verificación de género está marcada
-        if ($("input[name='genre']:checked").length === 0) {
-          // Mostrar un mensaje de error
-          alert("Por favor, selecciona al menos un género.");
-          // Prevenir el envío del formulario
-          event.preventDefault();
-        }
-      });
-    });
-  </script>
 
 
 </body>

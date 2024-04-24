@@ -1,5 +1,5 @@
 require("dotenv").config();
-const app = require("./src/server")
+const app = require("./src/app")
 const dbCon = require("./src/config/dbCon")//agregado demo
 
 const { PORT } = process.env
