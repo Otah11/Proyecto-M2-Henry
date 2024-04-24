@@ -9,5 +9,14 @@ module.exports = {
             console.error("Error al obtener las películas:", error.message);
             throw error;
         }
+    },
+    postMoviesService: async (pelicula) => {
+        try {
+            const newMovie = await Movie.create(pelicula)
+            return newMovie;
+        } catch (error) {
+            return error;
+            
+        }
     }
 };
