@@ -83,10 +83,17 @@ function handlerSubmit(event) {
         genre: genres
     };
 
-         
-            const response = axios.post("http://localhost:3000/movies", movie);
-            response.then (()=> {alert('Película enviada')}).catch((error)=> console.log(error))
-            ;
+    axios.post('http://localhost:3000/movies', movie, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(() => alert('Película enviada'))
+      .catch(error => console.log(error));  
+
+            // const response = axios.post("http://localhost:3000/movies", movie);
+            // response.then (()=> {alert('Película enviada')}).catch((error)=> console.log(error))
+            // ;
     
         
   
